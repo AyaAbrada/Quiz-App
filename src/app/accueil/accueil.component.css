@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .background {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://img.freepik.com/premium-photo/80s-arcade-game-themed-background-80s-retro-nostalgic_962764-95579.jpg?w=2000');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  select, button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #6fd9ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffbad6;
+  }
+  
