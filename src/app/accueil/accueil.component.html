@@ -6,12 +6,10 @@
         <label for="categorie">Choisir une catégorie :</label>
         <select id="categorie" name="categorie">
           <option value="">-- Sélectionner --</option>
-          <option value="culture">Culture générale</option>
-          <option value="sport">Sport</option>
-          <option value="histoire">Histoire</option>
-          <option value="science">Science</option>
+          <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
         </select>
-  
+
+
         <label for="difficulte">Choisir une difficulté :</label>
         <select id="difficulte" name="difficulte">
           <option value="">-- Sélectionner --</option>
@@ -20,6 +18,8 @@
           <option value="difficile">Difficile</option>
         </select>
   
+  
+    
         <button type="submit">Démarrer</button>
       </form>
     </div>

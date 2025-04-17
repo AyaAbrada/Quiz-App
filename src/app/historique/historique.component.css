@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .background {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://img.freepik.com/premium-photo/80s-arcade-game-themed-background-80s-retro-nostalgic_962764-95579.jpg?w=2000');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .score-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .score-table th,
+  .score-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .score-table th {
+    background-color: #6fd9ff;
+    color: white;
+  }
+  
+  .score-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .score-table tr:hover {
+    background-color: #ffbad6;
+    transition: 0.3s;
+  }
+  
