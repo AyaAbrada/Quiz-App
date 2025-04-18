@@ -1,7 +1,7 @@
 import { Component, inject,  OnInit } from '@angular/core';
-
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { QuizService } from '../services/quiz.service';
 
 @Component({
   selector: 'app-accueil',
@@ -22,9 +22,12 @@ export class AccueilComponent implements OnInit {
   numQuestions: number = 10;
   httpClient: any;
   quizData: any;
-
+  
   ngOnInit(): void {
     this.fetchCategories();
+
+   
+      
   }
 
   fetchCategories(): void {
